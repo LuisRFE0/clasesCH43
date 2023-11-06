@@ -1,0 +1,58 @@
+.tabla {
+    border: 2px solid black;
+    width: 100%;
+    height: auto;
+}
+
+td {
+    width: 100px;
+    text-align: center;
+}
+
+.semana {
+    border: 2px solid black;
+    background: linear-gradient(to right, #eb3e23, #ffe5b5);
+}
+
+.fin {
+    border: 2px solid black;
+    background: linear-gradient(to right, #a070ec, #cf98f5);
+
+}
+
+.datos {
+    border: 2px solid black;
+}
+
+.lu {
+    background-color: #eb3e23;
+}
+
+.ma {
+    background-color: #f06847;
+}
+
+.mi {
+    background-color: #f5916c;
+}
+
+.ju {
+    background-color: #fabb90;
+    background: linear-gradient(to right, #fabb90, #ffe5b5);
+}
+
+.vi {
+    background-color: #ffe5b5;
+}
+
+.sa {
+    background-color: #a070ec;
+}
+
+.do {
+    background-color: #cf98f5;
+}
+
+.precio {
+    background-color: rgb(145, 231, 169);
+}
