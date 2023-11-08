@@ -1,11 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .form-container {
+      width: 500px;
+      margin: 50px auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 10px 10px 10px 15px rgb(53, 82, 120);
+      padding: 20px;
+    }
+
+    .form-container h1 {
+      text-align: center;
+      color: #4a4a4a;
+      margin-bottom: 20px;
+    }
+
+    .form-container input,
+    .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #d9d9d9;
+      outline: none;
+      font-size: 16px;
+    }
+
+    input,
+    textarea {
+      border-radius: 10px;
+    }
+
+    .form-container input:focus,
+    .form-container textarea:focus {
+      border-color: #a6a6a6;
+    }
+
+    .form-container input[type="submit"] {
+      background-color: #7548c3;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #ba3dab;
+    }
+
+    .form-container .gradient {
+      height: 10px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    input:hover,
+    textarea:hover {
+      background-color: rgb(213, 162, 245);
+    }
+
+    fieldset {
+      border: #7548c3 solid 3px;
+    }
+  </style>
 </head>
+
 <body>
-    
+  <div class="form-container">
+    <div class="gradient"></div>
+    <h1>Contactanos para tuis pedidos</h1>
+    <form>
+      <fieldset>
+        <legend>Datos basicos de contacto</legend>
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="text" name="telz" placeholder="Telefono" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="message" placeholder="Mensaje" rows="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Datos del pedido</legend>
+        <input type="number" placeholder="Numero de tamales">
+        <input type="number" placeholder="Litros de atole">
+        <label for="">Fecha del evento</label><input type="date" name="fecha" required>
+      </fieldset>
+      <fieldset>
+        <legend>Datos de envío</legend>
+        <select name="stores" id="stores">
+          <option value="x">Selecciona una sucursal</option>
+          <option value="Atizapan">Atizapan</option>
+          <option value="Magdalena contreras">Magdalena contreras</option>
+          <option value="Ecatepec">Ecatepec</option>
+          <input list="branch" placeholder="Sucursal">
+          <datalist id="branch">
+            <option value="x">Selecciona una sucursal</option>
+            <option value="Atizapan">Atizapan</option>
+            <option value="Magdalena contreras">Magdalena contreras</option>
+            <option value="Ecatepec">Ecatepec</option>
+          </datalist>
+          <label for="">Tienda<input type="radio" name="x"></label>
+          <label for="">Sucursal <input type="radio" name="x">
+          </label>
+
+        </select>
+      </fieldset>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
 </body>
+
 </html>
